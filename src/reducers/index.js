@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
-const rootReducer = combineReducers({
-  state: (state = {}) => state
+import {reducer as form} from 'redux-form';
+
+const rootReducer = combineReducers({ // ability to type within search bar
+  form
 });
 
 export default rootReducer;
