@@ -13,6 +13,7 @@ class RecentPosts extends Component {
       if(index < 3) { // only returning no more than 3 posts (by index value)
         return (
           <Post {...post} key={index}/> // using spread operator from post to render all data within this link; using unique key prop (index)
+          // giving post all post attributes (id, title, content, etc.)
         ); 
       }
     })
