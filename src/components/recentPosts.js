@@ -12,7 +12,7 @@ class RecentPosts extends Component {
     const posts = this.props.recentPosts.map((post, index) => { // mapping state to props
       if(index < 3) { // only returning no more than 3 posts (by index value)
         return (
-          <Post {...post} key={index}/> // using spread operator from post to render all data within this link
+          <Post {...post} key={index}/> // using spread operator from post to render all data within this link; using unique key prop (index)
         ); 
       }
     })
