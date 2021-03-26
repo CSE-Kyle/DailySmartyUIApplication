@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
 import * as actions from '../actions';
+import Post from './post';
 
 class RecentPosts extends Component {
   componentDidMount() {
@@ -11,9 +12,7 @@ class RecentPosts extends Component {
     const posts = this.props.recentPosts.map((post, index) => { // mapping state to props
       if(index < 3) { // only returning no more than 3 posts (by index value)
         return (
-          <li key={index}> {/* unique key prop */}
-            {post.title} {/* displaying the posts on the page */}
-          </li>
+          <Post {...post} key={index}/> // using spread operator from post to render all data within this link
         ); 
       }
     })
