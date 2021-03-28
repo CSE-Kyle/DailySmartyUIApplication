@@ -3,9 +3,8 @@ import {Field, reduxForm} from 'redux-form';
 import {withRouter} from 'react-router-dom';
 
 class SearchBar extends Component {
-  handleFormSubmit = function({query}) { // accessing all form attributes
-    console.log("trying to handle submit for query", query); // displays search bar input within console
-    this.props.history.push('/results'); // redirects webpage to results page after entering input in search bar; navigate to a new route.
+  handleFormSubmit = function({query}) {
+    this.props.onSubmit(query);
   }
 
   renderInput(field) {
