@@ -17,9 +17,7 @@ class ResultsPosts extends Component {
 }
 
 function mapStateToProps(state) {
-    return {
-        state
-    }
+    return {state} // ask about this (redux resultsPosts is empty)
 }
 
 export default connect(mapStateToProps)(ResultsPosts);
