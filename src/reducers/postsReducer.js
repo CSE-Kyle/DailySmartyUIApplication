@@ -9,7 +9,7 @@ const INIT_STATE = {
 }
 
 export default function(state = INIT_STATE, action) {
-    switch (action.type) {  // determining which action you're hitting
+    switch (action.type) { // determining which action you're hitting
         case SET_RECENT_POSTS:
             const recentPosts = action.payload; // connected to payload within index.js file (actions); being dispatched
             return {
