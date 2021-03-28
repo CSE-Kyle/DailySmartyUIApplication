@@ -11,7 +11,7 @@ export function fetchRecentPosts() {
 
         axios.get("https://api.dailysmarty.com/posts")
             .then(response => {
-                console.log(response.data.posts); // seeing all posts within console
+                console.log(response.data.posts);  // seeing all posts within console
                 dispatch({
                     type: SET_RECENT_POSTS,
                     payload: response.data.posts
