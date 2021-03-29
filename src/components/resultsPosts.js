@@ -6,7 +6,7 @@ import Post from './post';
 class ResultsPosts extends Component {
     renderPosts() { // queries search results depending on keyword entered
         const posts = this.props.posts.map((post, index) => {
-            return <Post key={index} {...post}/>
+            return <Post type="result" key={index} {...post}/>
         })
         return posts;
     }
