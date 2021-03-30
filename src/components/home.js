@@ -10,8 +10,9 @@ import * as actions from '../actions';
 class Home extends Component {
   handleSearchBarSubmit(query) { // accessing all form attributes
     // console.log("trying to handle submit for query", query); // displays search bar input within console    
-    this.props.fetchPostsWithQuery(query); // connected to state from mapStateToProps to understand why you're using props
-    this.props.history.push('/results'); // redirects webpage to results page after entering input in search bar; navigate to a new route.
+    this.props.fetchPostsWithQuery(query, () => { // connected to state from mapStateToProps to understand why you're using props 
+      this.props.history.push("/results"); // redirects webpage to results page after entering input in search bar; navigate to a new route.
+    });
   }
   
   render() {
