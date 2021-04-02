@@ -62,5 +62,11 @@
         color: $color-gray-one;
         font-size: 14px;
         line-height: 17px;
+        text-decoration: none;
+
+        &:hover {
+            color: #43fae8;
+            transition: all 0.2s ease-in-out;
+        }
     }
 }
