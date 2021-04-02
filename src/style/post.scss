@@ -15,12 +15,17 @@
     margin-right: 8px;
 }
 
-.post-link {
+.post-links {
     .post-link__box {
 
     }
 
-    .post-link__link {
+    .post-link__link a {
+        text-decoration: none;
 
+        &:hover {
+           color: $color-light-blue;
+           transition: all 0.2s ease-in-out;
+        }
     }
 }
