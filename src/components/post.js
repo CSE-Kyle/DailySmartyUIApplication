@@ -44,7 +44,7 @@ class Post extends Component {
           </div>
 
           <div className="recent-post__topics">
-          
+            {this.renderTopics()}
           </div>
         </li>
       )
