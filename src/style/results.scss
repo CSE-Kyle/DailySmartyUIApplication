@@ -38,7 +38,8 @@
         line-height: 22px;
 
         &:hover {
-            text-decoration: underline;
+           color: skyblue;
+           transition: all 0.2s ease-in-out;
         }
     }
 
@@ -65,7 +66,7 @@
         text-decoration: none;
 
         &:hover {
-            color: #43fae8;
+            color: skyblue;
             transition: all 0.2s ease-in-out;
         }
     }

@@ -1,7 +1,14 @@
 .recent-post {
     .recent-post__title a {
         color: $color-gray-one;
+        text-decoration: none;
+
+        &:hover {
+            color: skyblue;
+            transition: all 0.3s ease-in-out;
+        }
     }
+
     // .recent-post__topics {
         
     // }
