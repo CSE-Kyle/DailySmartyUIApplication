@@ -53,6 +53,10 @@ class Post extends Component {
         </div>
       )
     })
+
+    if (links == 0) { // displaying div tag if no available post sublinks within main results posts
+      return <div className="no-content">post links not available</div>
+    }
     return links;
   }
 

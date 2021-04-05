@@ -32,6 +32,12 @@ $color-blue-one: #0079ff;
 $color-light-blue: rgb(40, 238, 252);
 $color-gray-three: #D8D8D8;
 
+.no-content {
+    color: $color-gray-one;
+    font-size: 14px;
+    line-height: 17px;
+}
+
 @import './mixins.scss';
 @import './searchBar.scss';
 @import './recentPosts.scss';
