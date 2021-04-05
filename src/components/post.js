@@ -17,7 +17,7 @@ class Post extends Component {
     return topics; // displays associated topics
   }
 
-  getNameForPostLink(str) {
+  getNameForPostLink(str) { // displaying sublinks within the results posts
     var n = str.lastIndexOf('/');
     var link = str.substring(n + 1, str.length);
 
